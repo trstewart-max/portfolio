@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triton Stewart: Personal site and portfolio</title>
+
+    <style>
+        body {
+            font: 100%/1.5 system-ui;
+            max-width: 100ch;
+            margin-inline: auto;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid oklch(80% 3% 200);
+        }
+
+        nav a {
+            flex: 1;
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a.current {
+            border-bottom: 0.4em solid oklch(80% 3% 200);
+            padding-bottom: 0.1em;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
-    <a href="index.html">Home</a>
-    <a href="projects/">Projects</a>
-    <a href="contact/">Contact</a>
-    <a href="https://github.com/trstewart-max" target="_blank">GitHub</a>
-    <a href="cv/">CV</a>
+        <a href="index.html" class="current">Home</a>
+        <a href="projects/">Projects</a>
+        <a href="contact/">Contact</a>
+        <a href="https://github.com/trstewart-max" target="_blank">GitHub</a>
+        <a href="cv/">CV</a>
     </nav>
 
     <h1>Triton Stewart</h1>
-    <p>I am a Data Science and Economics major at UC San Diego. I work at Handel's Ice Cream and intern at Pacific Spirit Investments.</p>
+    <p>
+        I am a Data Science and Economics major at UC San Diego. 
+        I work at Handel's Ice Cream and intern at Pacific Spirit Investments.
+    </p>
+
     <img src="images/young-triton.png" alt="A childhood photo of me wearing my dad's hat and watch">
-    <link rel="stylesheet" href="style.css">
 </body>
 </html>
 
