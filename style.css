@@ -1,6 +1,5 @@
 body {
   font: 100%/1.5 system-ui;
-
   max-width: 100ch;
   margin-inline: auto;
   padding: 1rem;
@@ -33,4 +32,38 @@ nav a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+nav a:nth-child(1):hover {
+  background-color: oklch(85% 15% 30);
+}
+
+nav a:nth-child(2):hover {
+  background-color: oklch(85% 15% 120);
+}
+
+nav a:nth-child(3):hover {
+  background-color: oklch(85% 15% 200);
+}
+
+nav a:nth-child(4):hover {
+  background-color: oklch(85% 15% 260);
+}
+
+nav a:nth-child(5):hover {
+  background-color: oklch(85% 15% 330);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  margin-top: 1em;
+  border-radius: 10px;
 }
