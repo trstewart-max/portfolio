@@ -34,40 +34,7 @@ img {
   height: auto;
 }
 
-nav a:nth-child(1):hover {
-  background-color: oklch(85% 15% 30);
-}
-
-nav a:nth-child(2):hover {
-  background-color: oklch(85% 15% 120);
-}
-
-nav a:nth-child(3):hover {
-  background-color: oklch(85% 15% 200);
-}
-
-nav a:nth-child(4):hover {
-  background-color: oklch(85% 15% 260);
-}
-
-nav a:nth-child(5):hover {
-  background-color: oklch(85% 15% 330);
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5em;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-img {
-  margin-top: 1em;
-  border-radius: 10px;
-}
-
+/* Step 3: Contact form */
 
 input,
 textarea,
@@ -75,20 +42,24 @@ button {
   font: inherit;
 }
 
-label,
-input,
-textarea,
-button {
-  display: block;
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+label {
+  grid-column: 1;
 }
 
 input,
-textarea,
-button {
+textarea {
+  grid-column: 2;
   width: 100%;
   box-sizing: border-box;
 }
 
-label {
-  margin-block: 0.5em;
+button {
+  grid-column: 1 / -1;
+  padding: 0.5em;
 }

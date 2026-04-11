@@ -1,36 +1,36 @@
-<h1>Contact</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
 
-<nav>
+<body>
+  <nav>
     <a href="../index.html">Home</a>
     <a href="../projects/">Projects</a>
-    <a href="../contact/">Contact</a>
+    <a href="../contact/" class="current">Contact</a>
     <a href="https://github.com/trstewart-max" target="_blank">GitHub</a>
     <a href="../cv/">CV</a>
-</nav>
+  </nav>
 
+  <h1>Contact</h1>
 
-<form action="mailto:trstewart@ucsd.com" method="POST" enctype="text/plain">
+  <form action="mailto:trstewart@ucsd.com" method="POST" enctype="text/plain">
     
-    <label>
-        Email:
-        <input type="email" name="email">
-    </label>
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email">
 
+    <label for="subject">Subject:</label>
+    <input id="subject" name="subject">
 
-    <label>
-        Subject:
-        <input name="subject">
-    </label>
-    
-    <br><br>
-
-    <label>
-        Message:
-        <textarea name="body"></textarea>
-    </label>
-    
-    <br><br>
+    <label for="body">Message:</label>
+    <textarea id="body" name="body"></textarea>
 
     <button>Send</button>
 
-</form>
+  </form>
+</body>
+</html>
