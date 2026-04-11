@@ -34,44 +34,8 @@ img {
   height: auto;
 }
 
-/* Step 3: Contact form */
-
-input,
-textarea,
-button {
-  font: inherit;
-}
-
-form {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1em;
-}
-
-label {
-  grid-column: 1;
-}
-
-input,
-textarea {
-  grid-column: 2;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-button {
-  grid-column: 1 / -1;
-  padding: 0.5em;
-}
-
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
-  outline: 3px solid red;
-}
-
-.projects article {
-  outline: 2px solid blue;
 }
