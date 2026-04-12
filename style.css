@@ -88,16 +88,15 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* CV ONLY */
 
-
-:root {
+.resume {
   --text: #1d1d1f;
   --muted: #6e6e73;
   --line: #d2d2d7;
   --soft: #f5f5f7;
-}
 
-.resume {
+  color: var(--text);
   max-width: 72ch;
   margin-inline: auto;
 }
@@ -166,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.35rem;
 }
 
-.skills {
+.resume .skills {
   list-style: none;
   padding: 0;
   display: flex;
@@ -174,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
 }
 
-.skills li {
+.resume .skills li {
   border: 1px solid var(--line);
   background: var(--soft);
   border-radius: 999px;
