@@ -1,0 +1,75 @@
+[
+  {
+    "title": "EyeSpeak – Accessibility Web App",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a web app using eye-tracking to help disabled and elderly users draw and communicate hands-free, integrating WebGazer.js and text-to-speech."
+  },
+  {
+    "title": "Friends Reboot Episode Analyzer",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed Friends episode data using Pandas to identify patterns in successful episodes and generate data-driven reboot concepts."
+  },
+  {
+    "title": "Image Converter Tool",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Developed a Python tool for image processing, including transformations like inversion and flipping."
+  },
+  {
+    "title": "AI Financial Analytics Pipeline",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built an AI-driven system to process financial spreadsheets and generate structured performance reports using statistical methods."
+  },
+  {
+    "title": "Investment Performance Analysis",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed asset performance using information coefficients, t-statistics, and annualized returns to identify trends and outliers."
+  },
+  {
+    "title": "Portfolio Data Automation",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created automated workflows to organize and summarize portfolio data for internal investment review."
+  },
+  {
+    "title": "Client Outreach Data System",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed structured datasets and CRM workflows to support large-scale client outreach and lead generation."
+  },
+  {
+    "title": "Personal Tutoring System",
+    "year": 2023,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Provided one-on-one tutoring in mathematics and English, improving student outcomes through personalized instruction."
+  },
+  {
+    "title": "Classroom Support & Grading System",
+    "year": 2023,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Assisted in grading and supporting students in a classroom environment, helping maintain a productive learning space."
+  },
+  {
+    "title": "Customer Service Optimization",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Worked in a fast-paced environment to improve efficiency and customer satisfaction through teamwork and operations management."
+  },
+  {
+    "title": "Recipe & Nutrition Data Analysis",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed recipe datasets to study relationships between nutrition, fitness metrics, and preparation time using Python and regression models."
+  },
+  {
+    "title": "Grocery Cost vs Protein Analysis",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built visualizations comparing protein per dollar across stores to analyze cost efficiency for fitness-focused meal planning."
+  }
+]
+

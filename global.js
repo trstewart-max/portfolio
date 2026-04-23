@@ -86,3 +86,42 @@ form?.addEventListener("submit", function (event) {
   url += params.join("&");
   location.href = url;
 });
+
+
+
+export async function fetchJSON(url) {
+  try {
+    const response = await fetch(url);
+    console.log(response);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+
+export function renderProjects(projects, container, headingLevel = 'h2') {
+  container.innerHTML = ''; // clear existing content
+
+  projects.forEach(project => {
+    const article = document.createElement('article');
+
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="">
+      <p>${project.description}</p>
+    `;
+
+    container.appendChild(article);
+  });
+}
+
+export async function fetchGithubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
