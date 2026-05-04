@@ -9,6 +9,7 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contact/", title: "Contact" },
   { url: "cv/", title: "CV" },
+  { url: "meta/", title: "Meta" },
   { url: "https://github.com/trstewart-max", title: "GitHub" }
 ];
 
@@ -128,3 +129,4 @@ export function renderProjects(projects, container, headingLevel = 'h2') {
 export async function fetchGithubData(username) {
   return fetchJSON(`https://api.github.com/users/${username}`);
 }
+
