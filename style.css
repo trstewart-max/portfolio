@@ -191,3 +191,22 @@ h1, h2, h3, h4, h5, h6 {
 #projects-pie-plot path {
   cursor: pointer;
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+  gap: 1em;
+}
+
+.stats dt {
+  grid-row: 1;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 2rem;
+}
