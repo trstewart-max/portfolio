@@ -30,10 +30,11 @@
     "description": "Analyzed asset performance using information coefficients, t-statistics, and annualized returns to identify trends and outliers."
   },
   {
-    "title": "Portfolio Data Automation",
-    "year": 2025,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Created automated workflows to organize and summarize portfolio data for internal investment review."
+  "title": "Bikewatching",
+  "year": "2026",
+  "image": "images/bikewatchers.png",
+  "url": "https://trstewart-max.github.io/lab7/",
+  "description": "Interactive Mapbox + D3 visualization of BlueBike traffic patterns across Boston and Cambridge by time of day."
   },
   {
     "title": "Client Outreach Data System",

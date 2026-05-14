@@ -13,11 +13,14 @@ let pages = [
   { url: "https://github.com/trstewart-max", title: "GitHub" }
 ];
 
-const BASE_PATH =
+export const BASE_PATH =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
     ? "/"
     : "/portfolio/";
 
+// ======================
+// NAVIGATION
+// ======================
 let nav = document.createElement("nav");
 document.body.prepend(nav);
 
@@ -42,6 +45,9 @@ for (let p of pages) {
   nav.append(a);
 }
 
+// ======================
+// THEME SWITCHER
+// ======================
 document.body.insertAdjacentHTML(
   "afterbegin",
   `
@@ -59,7 +65,10 @@ document.body.insertAdjacentHTML(
 let select = document.querySelector(".color-scheme select");
 
 if (localStorage.colorScheme) {
-  document.documentElement.style.setProperty("color-scheme", localStorage.colorScheme);
+  document.documentElement.style.setProperty(
+    "color-scheme",
+    localStorage.colorScheme
+  );
   select.value = localStorage.colorScheme;
 }
 
@@ -69,8 +78,9 @@ select.addEventListener("input", function (event) {
   localStorage.colorScheme = value;
 });
 
-
-
+// ======================
+// CONTACT FORM
+// ======================
 let form = document.querySelector("form");
 
 form?.addEventListener("submit", function (event) {
@@ -88,34 +98,47 @@ form?.addEventListener("submit", function (event) {
   location.href = url;
 });
 
-
-
+// ======================
+// FETCH JSON
+// ======================
 export async function fetchJSON(url) {
   try {
     const response = await fetch(url);
-    console.log(response);
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+      throw new Error(`Failed to fetch JSON: ${response.statusText}`);
     }
 
-    const data = await response.json();
-    return data;
-
+    return await response.json();
   } catch (error) {
-    console.error('Error fetching or parsing JSON data:', error);
+    console.error("Error fetching or parsing JSON data:", error);
   }
 }
 
-export function renderProjects(projects, container, headingLevel = 'h2') {
-  container.innerHTML = '';
+// ======================
+// RENDER PROJECTS
+// ======================
+export function renderProjects(projects, container, headingLevel = "h2") {
+  container.innerHTML = "";
 
-  projects.forEach(project => {
-    const article = document.createElement('article');
+  projects.forEach((project) => {
+    const article = document.createElement("article");
 
     article.innerHTML = `
-      <${headingLevel}>${project.title}</${headingLevel}>
-      <img src="${project.image}" alt="">
+      <${headingLevel}>
+        ${
+          project.url
+            ? `<a href="${project.url}" target="_blank">${project.title}</a>`
+            : project.title
+        }
+      </${headingLevel}>
+
+      ${
+        project.image
+          ? `<img src="${BASE_PATH}${project.image}" alt="${project.title}">`
+          : `<div class="image-placeholder">IMAGE COMING SOON</div>`
+      }
+
       <div>
         <p>${project.description}</p>
         <p class="project-year">c. ${project.year}</p>
@@ -126,7 +149,9 @@ export function renderProjects(projects, container, headingLevel = 'h2') {
   });
 }
 
+// ======================
+// GITHUB API
+// ======================
 export async function fetchGithubData(username) {
   return fetchJSON(`https://api.github.com/users/${username}`);
 }
-
